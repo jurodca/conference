@@ -4,6 +4,7 @@ import com.pluralsight.model.Speaker;
 import com.pluralsight.repository.HibernateSpeakerRepositoryImpl;
 import com.pluralsight.repository.SpeakerRepository;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 public class SpeakerServiceImpl implements SpeakerService {
@@ -12,6 +13,11 @@ public class SpeakerServiceImpl implements SpeakerService {
 
     public SpeakerServiceImpl(SpeakerRepository speakerRepository){
         this.speakerRepository = speakerRepository;
+    }
+
+    @PostConstruct
+    private void initialize() {
+        System.out.println("We are called after the constructor");
     }
 
     @Override

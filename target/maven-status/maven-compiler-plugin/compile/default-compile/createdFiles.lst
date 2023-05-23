@@ -1,0 +1,8 @@
+com/pluralsight/Application.class
+com/pluralsight/model/Speaker.class
+com/pluralsight/service/SpeakerService.class
+com/pluralsight/AppConfig.class
+com/pluralsight/repository/SpeakerRepository.class
+com/pluralsight/util/CalendarFactory.class
+com/pluralsight/repository/HibernateSpeakerRepositoryImpl.class
+com/pluralsight/service/SpeakerServiceImpl.class
